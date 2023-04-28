@@ -1,0 +1,252 @@
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View ảnh và nhãn</title>
+    <style>
+        body{
+            padding: 20px;
+            font-family: sans-serif;
+            background-color: #f2f2F2;
+        }
+        img{width: 100%;height: 100%;
+        }
+h2{margin-bottom: .5em;}
+.gird-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 1em;
+}
+.location-listing{
+    position: relative;
+}
+.location-image{
+    line-height: 0;
+    overflow: hidden;
+} 
+.location-image img{
+    filter: blur(0px);
+    transition: filter 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+.location-title{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    width: 100%;height: 100%;
+    top: 0;
+  left: 0 ;
+  opacity: 0;
+  transform: opcity;
+  background:rgba(90, 0, 10,0.4) ;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+.location-listing:hover .location-title{opacity: 1;}
+.location-listing:hover .location-image img
+{filter: blur(2px);}
+@media (hover:none){
+    .location-title{opacity: 1;}
+    .location-image img{filter: blur(2px);}
+}
+.layout{
+           display: flex; 
+           height: 200px;
+           gap: 10px;
+        }
+        .layout > div {
+            flex: 1;
+            border-radius: 10px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45 1.4);
+        }
+        .layout > div:hover {
+            flex: 5;
+        }
+        * {
+    margin: 0;
+    padding: 0;
+  }
+  .button:hover {
+    color: white;
+    background-color: black;
+  }
+  body {
+    font-family: sans-serif;
+    color: #222;
+  }
+  #menu li {
+    color: #f1f1f1;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+  }
+ 
+   
+    ul {
+        box-sizing: border-box;
+        list-style: none;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    ul > li {
+        background-color: #fff;
+        border-radius: 1em;
+        padding: 0.5;
+        margin: 1em 0;
+        align-items: center;
+        display: flex;
+        display: inline-block;
+        padding: 0.1px 37px;
+    }
+    #menu > ul > li > a {
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+        align-items: center;
+        padding: 10px;
+    }
+    ul {
+        text-align: center;
+        padding: auto;
+    }
+  
+   
+      </style>
+</head>
+<body>
+    <div id="menu">
+        <ul>
+          <li><a href="./giới thiệu bản thân .html">Giới Thiệu</a></li>
+          <li><a href="./Giới thiệu quê hương.html">Quê hương</a></li>
+          
+      </div>
+    <h2> Xin chào mọi người</h2><BR>
+        <b> Hải Dương tuy không phải là cái tên nổi bật trên bản đồ du lịch nhưng lại hấp dẫn du khách bởi những di tích lịch sử lâu đời cùng phong cảnh bình yên, hữu tình.<br><br>
+            Hải Dương phù hợp để tham quan cả 4 mùa trong năm. Tuy nhiên, mùa lễ hội từ tháng 1 đến tháng 3 là thời điểm đẹp nhất vì Hải Dương có nhiều đền chùa, di tích lịch sử. Mùa vải thiều vào vụ thu hoạch là từ tháng 5 đến tháng 6. Còn mùa hoa hướng dương vào tháng 10. Tháng 12 là mùa hoa dã quỳ nở, du khách tự do check-in với cả đường hoa dưới chân cầu Phú Tảo, TP Hải Dương.<br><br>Hải Dương phù hợp để tham quan cả 4 mùa trong năm. Tuy nhiên, mùa lễ hội từ tháng 1 đến tháng 3 là thời điểm đẹp nhất vì Hải Dương có nhiều đền chùa, di tích lịch sử. Mùa vải thiều vào vụ thu hoạch là từ tháng 5 đến tháng 6. Còn mùa hoa hướng dương vào tháng 10. Tháng 12 là mùa hoa dã quỳ nở, du khách tự do check-in với cả đường hoa dưới chân cầu Phú Tảo, TP Hải Dương.
+
+        </b>
+        <img src="./img/21.jpg"><br> 
+        <div class="child-page-listing">
+            <h2>Du lịch văn hoá</h2>
+            <div class="gird-container">
+                <article id="3685" class="location-listing">
+                    <a class="location-title" href="#">Đảo Cò Chi Lăng Nam<br>Đảo cò thuộc xã Chi Lăng Nam, huyện Thanh Miện. Với diện tích hơn 31.000 ha, nơi đây là khu vực sinh sống của khoảng 12.000 cá thể cò và 5.030 cá thể vạc. Các loại cò chính gồm lửa, ruồi, bợ, đen...., vạc có xám, xanh, đen...</a>
+                    <div class="location-image">
+                        <a href=""> <img src="./img/28.jpg" width="300" height="170" alt="Hội Côn Sơn"> </a>
+                    </div>
+                </article>
+                <article id="3688" class="location-listing">
+                    <a class="location-title" href="#">Cây vải tổ<br>Thanh Hà vốn có vải thiều ngon nức tiếng, ít ai biết vải trong vùng đều lấy giống từ cây tổ 200 tuổi của cụ Hoàng Văn Cơm. Cây vải tổ ở xã Thanh Sơn, huyện Thanh Hà tuổi đời hơn 200 năm, giữ kỷ lục "Cây vải thiều lâu năm nhất".</a>
+                    <div class="location-image">
+                        <a href=""> <img src="./img/29.jpg" width="300" height="170" alt="London"> </a>
+                    </div>
+                </article>
+                <article id="3691" class="location-listing">
+                    <a class="location-title" href="#">Đền Đươi<br>Đền Đươi còn có tên Quỳnh Hoa từ, ở làng Cẩm Cầu, xã Thống Nhất (Gia Lộc, Hải Dương). Đây là ngôi đền cổ được xây dựng từ thời nhà Lý (thế kỷ thứ 11). Năm 1991, đền Đươi được xếp hạng di tích cấp quốc gia.</a>
+                    <div class="location-image">
+                        <a href=""> <img src="./img/30.jpg" width="300" height="170" alt="New York"> </a>
+                    </div>
+                </article>
+        </div>
+    </div>
+    
+    <div class="child-page-listing">
+        <h2>Du lịch văn hoá</h2>
+        <div class="gird-container">
+            <article id="3685" class="location-listing">
+                <a class="location-title" href="#">Lễ hội Côn Sơn 16-20 tháng Tám (Cộng Hòa, Chí Linh)</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/hội côn sơn.jpg" width="300" height="170" alt="Hội Côn Sơn"> </a>
+                </div>
+            </article>
+            <article id="3688" class="location-listing">
+                <a class="location-title" href="#">Hội đền Sinh</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/hội dền sinh.jpg" width="300" height="170" alt="London"> </a>
+                </div>
+            </article>
+            <article id="3691" class="location-listing">
+                <a class="location-title" href="#">Hội tuần tranh<br>Lễ hội Tuần Tranh 14-2 (Đồng Tâm, Ninh Giang)</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/hội tuần tranh.jpg" width="300" height="170" alt="New York"> </a>
+                </div>
+            </article>
+            <article id="3694" class="location-listing">
+                <a class="location-title" href="#">Hội Yết Kiêu<br>Lễ hội đền Yết Kiêu 15-1 (Thông Quát, Gia Lộc)</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/hội yết kiêu.jpg" width="300" height="170" alt="Be Jing"> </a>
+                </div>
+            </article>
+
+            <article id="3697" class="location-listing">
+                <a class="location-title" href="#">Hội đền cao<br>Lễ hội đền Cao 22-24 tháng Giêng (An Lạc, Chí Linh)</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/27.jpg" width="300" height="170" alt="Cape Towm"> </a>
+                </div>
+            </article>
+
+            <article id="3710" class="location-listing">
+                <a class="location-title" href="#">Hội đền kiếp bạc<br>Lễ hội đền Kiếp Bạc 18-20 tháng Tám (Hưng Đạo, Chí Linh)</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/hội đền kiếp bạc.jpg" width="300" height="170" alt="Paris"> </a>
+                </div>
+            </article>
+
+
+        </div>
+
+    </div>
+    <div class="child-page-listing">
+        <h2>Du lịch văn hoá</h2>
+        <div class="gird-container">
+            <article id="3685" class="location-listing">
+                <a class="location-title" href="#">Những trò chơi dân gian độc đáo được duy trì phải kể đến như đánh pháo đất ở Ninh Giang, Tứ Kỳ, Gia Lộc; thả diều ở Kinh Môn; thổi cơm thi ở Thanh Hà; nặn tò he ở Nam Sách; đánh bệt ở đền Sượt; múa lễ chữ ở Bình Giang...</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/31.jpg" width="300" height="170" alt="Hội Côn Sơn"> </a>
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="child-page-listing">
+        <h2>Đặc sản</h2>
+        <div class="gird-container">
+            <article id="3685" class="location-listing">
+                <a class="location-title" href="#">Bánh đậu xanh<br>Nhắc đến Hải Dương, phần lớn ý nghĩ về quà ngon đều tập trung về bánh đậu xanh. Món này ra đời vào đầu thế kỷ 20 và dù không có vẻ ngoài bắt mắt, hương vị thơm ngon đặc trưng của bánh đậu xanh vẫn níu giữ sự quan tâm nhiều lữ khách. </a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/32.png" width="300" height="170" alt="Hội Côn Sơn"> </a>
+                </div>
+            </article>
+            <article id="3688" class="location-listing">
+                <a class="location-title" href="#">Chả rươi<br>Ở Hải Dương, rươi có ở các vùng ruộng trũng Kinh Môn, Kim Thành, Thanh Hà, Tứ Kỳ. Cứ vào "tháng chín đôi mươi tháng mười mồng năm" khi nước triều dâng lên ngập các ruộng, rươi từ dưới lòng đất chui lên từng đàn bơi ra sông.</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/33.jpg" width="300" height="170" alt="London"> </a>
+                </div>
+            </article>
+            <article id="3691" class="location-listing">
+                <a class="location-title" href="#">Bánh gai<br>Xuất hiện tại Hải Dương từ thế kỷ 12, bánh gai nhanh chóng nổi tiếng khắp xa gần và tồn tại đến ngày nay. Đây là món bánh giản dị, được làm từ những nguyên liệu ruộng vườn nhưng vẫn khiến thực khách nhớ mãi.</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/34.jpg" width="300" height="170" alt="New York"> </a>
+                </div>
+            </article>
+            <article id="3694" class="location-listing">
+                <a class="location-title" href="#">Vải thiều Thanh Hà<br>Vào tháng 5, tháng 6, khắp Hải Dương, đặc biệt là vùng đất Thanh Hà bạt ngàn các cây vải thiều chín rộ. Đặc trưng của vải Thanh Hà là vỏ chín có màu đỏ tươi, bề mặt phẳng đều, cùi vải dày, màu trắng trong, giòn, vị ngọt thanh và mùi thơm nhẹ.</a>
+                <div class="location-image">
+                    <a href=""> <img src="./img/35.jpg" width="300" height="170" alt="Be Jing"> </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</body>
+</html>
